@@ -20,7 +20,7 @@ zxcvbn = (password, options = {}) ->
   for arg in user_inputs
     if typeof arg in ["string", "number", "boolean"]
       sanitized_inputs.push arg.toString().toLowerCase()
-  matching.set_user_input_dictionary sanitized_inputs
+  # matching.set_user_input_dictionary sanitized_inputs
   matches = matching.omnimatch password
   result = scoring.most_guessable_match_sequence password, matches
   result.calc_time = time() - start

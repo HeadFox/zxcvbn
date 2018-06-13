@@ -1,4 +1,4 @@
-frequency_lists = require('./frequency_lists')
+# frequency_lists = require('./frequency_lists')
 adjacency_graphs = require('./adjacency_graphs')
 scoring = require('./scoring')
 
@@ -10,9 +10,9 @@ build_ranked_dict = (ordered_list) ->
     i += 1
   result
 
-RANKED_DICTIONARIES = {}
-for name, lst of frequency_lists
-  RANKED_DICTIONARIES[name] = build_ranked_dict lst
+# RANKED_DICTIONARIES = {}
+# for name, lst of frequency_lists
+#   RANKED_DICTIONARIES[name] = build_ranked_dict lst
 
 GRAPHS =
   qwerty:     adjacency_graphs.qwerty
