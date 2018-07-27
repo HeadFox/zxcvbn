@@ -81,9 +81,9 @@ matching =
   omnimatch: (password) ->
     matches = []
     matchers = [
-      @dictionary_match
-      @reverse_dictionary_match
-      @l33t_match
+      #@dictionary_match
+      #@reverse_dictionary_match
+      #@l33t_match
       @spatial_match
       @repeat_match
       @sequence_match
